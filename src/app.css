@@ -1,0 +1,40 @@
+/* src/app.css */
+@layer base, utils, components;
+
+@import "@webtui/css";
+@import "@webtui/theme-catppuccin";
+
+:root {
+    /* Theme Configuration */
+    --bg-color: var(--base);
+    --fg-color: var(--text);
+    --accent-color: var(--teal);
+    --border-color: var(--surface0);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    font-family: "Monaspace Neon NF", "Fira Code", monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    border-radius: 0 !important; /* Enforce sharp corners */
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

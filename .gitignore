@@ -1,0 +1,53 @@
+node_modules
+
+# SvelteKit
+.svelte-kit/
+/build
+/dist
+
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.test
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Package managers
+pnpm-lock.yaml
+yarn.lock
+bun.lock
+
+# IDE
+.vscode/
+.idea/
+
+# Neovim
+.vimrc.local
+.vimrc.bundles
+.netrwhist
+*.swp
+*.swo
+*~
+
+# Neovim plugin manager
+plug/
+dein/repos/
+dein/cache/
+
+# Neovim backup/swap files
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+.netrwhist
+Sessionx.vim
+.breakpoints.vim
